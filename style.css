@@ -175,10 +175,10 @@ body {
 
 .form-box .input-box {
     position: relative;
-    width: 200%;
-    height: 50px;
+    width: 300%;
+    height: 38px;
     border-bottom: 2px solid #ffffff;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .input-box input {
@@ -187,10 +187,12 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 16px; /* Makes the text smaller */
     color: #ffffff;
-    font-weight: 500;
-    padding-right: 28px;
+    font-weight: 100;
+    padding-right: 48px;
+    position: relative; /* Enables relative positioning */
+    top: -15px; /* Moves the input box 10px upward */
 }
 
 .input-box label {
@@ -198,8 +200,8 @@ body {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px; /* Adjust the font size to make the letters smaller */
+    font-weight: 400;
     pointer-events: none;
     transition: .5s ease;
 }
@@ -218,15 +220,73 @@ body {
 }
 
 .forgot-link {
-    color: rgb(69, 7, 128);
-    text-decoration: underline;
-    margin-right: 10px; /* Adds spacing from the edge */
+    position: relative; /* Allows positioning relative to its current position */
+    top: -23px; /* Moves the link upward */
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* Removes the underline */
+    margin-right: -35px; /* Adjust spacing from the edge */
+    display: inline-block; /* Ensures the entire word is clickable */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.forgot-link {
+    position: relative;
+    z-index: 10; /* Ensures the link is above other elements */
+
+}
+
+.forgot-link:hover {
+    color: #ffffff; /* Changes color on hover */
+    text-decoration: underline; /* Adds underline on hover */
 }
 
 .checkbox {
     position: relative; /* Allows positioning relative to its current position */
-    top: -10px; /* Moves the checkbox and label upward */
+    top: -40px; /* Moves the checkbox and label upward */
     display: flex; /* Ensures proper alignment with the label */
     align-items: center; /* Aligns the checkbox and label vertically */
     gap: 5px; /* Adds spacing between the checkbox and label */
+}
+
+.icon {
+    float: right; /* Moves the icon to the right */
+}
+
+.input-box {
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    margin: 20px 0;
+}
+
+.btn {
+
+    width: 100%;
+    height: 45px;
+    background: red;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-box .login-register {
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login-register p a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
 }
