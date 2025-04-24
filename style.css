@@ -208,14 +208,25 @@ body {
 .input-box input:not(:placeholder-shown) + label {
     top: -10px;
     font-size: 12px;
-    color: #ffffff; /* Optional: highlight color */
+    color: #ffffff;
 }
 
-.remeber-forgot {
-    font-size: 14.5px;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
+.form-options {
+    display: flex; /* Ensures flexibility for alignment */
+    justify-content: flex-end; /* Moves the content to the right */
+    margin-top: 10px; /* Adjust spacing as needed */
 }
 
+.forgot-link {
+    color: rgb(69, 7, 128);
+    text-decoration: underline;
+    margin-right: 10px; /* Adds spacing from the edge */
+}
+
+.checkbox {
+    position: relative; /* Allows positioning relative to its current position */
+    top: -10px; /* Moves the checkbox and label upward */
+    display: flex; /* Ensures proper alignment with the label */
+    align-items: center; /* Aligns the checkbox and label vertically */
+    gap: 5px; /* Adds spacing between the checkbox and label */
+}
